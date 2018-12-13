@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+</head>
+<body>
+
+<h2>Learn DevOps</h2>
+<p>The key to happiness is keep learning forever ...</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Jenkins')">Jenkins</button>
+  <button class="tablinks" onclick="openCity(event, 'Sonar')">Sonar</button>
+  <button class="tablinks" onclick="openCity(event, 'Nexus')">Nexus</button>
+  <button class="tablinks" onclick="openCity(event, 'Docker')">Docker</button>
+  <button class="tablinks" onclick="openCity(event, 'Git')">Git</button>
+  <button class="tablinks" onclick="openCity(event, 'Apache')">Apache</button>
+  <button class="tablinks" onclick="openCity(event, 'AWS')">AWS</button>
+  <button class="tablinks" onclick="openCity(event, 'Terraform')">Terraform</button>
+  <button class="tablinks" onclick="openCity(event, 'Ansible')">Ansible</button>
+  <button class="tablinks" onclick="openCity(event, 'JBoss')">JBoss</button>
+</div>
+
+<div id="Jenkins" class="tabcontent">
+  <h3>Jenkins</h3>
+  <p>Jenkins is coming soon.</p>
+  <img src="img\jenkins.png" alt="Nexus"></p>
+</div>
+
+<div id="JBoss" class="tabcontent">
+  <h3><a href="http://www.mastertheboss.com/jboss-server/jboss-configuration/what-is-jboss" target="_blank">JBoss</a></h3>
+  <p>JBoss is coming soon.</p>
+  <img src="img\jboss.jpg" alt="Nexus"></p>
+</div>
+
+<div id="Sonar" class="tabcontent">
+<h3><a href="https://medium.com/@mmelihgultekin/using-custom-quality-profiles-in-sonarqube-and-sonarlint-plugin-part-2-777a688b776" target="_blank">Sonar</a></h3>
+  <h3>Sonar</h3>
+  <p>Sonar Contents will be updated shortly</p> 
+  <img src="img\sonar.png" alt="Nexus"></p>
+</div>
+<!-- <div id="Sonar" class="tabcontent">
+  <h3>Sonar</h3>
+  <p>Sonar Contents will be updated shortly</p> 
+</div> -->
+<div id="AWS" class="tabcontent">
+  <h3>AWS</h3>
+  <img src="img\amazon.gif" alt="Nexus"></p>
+  <p>AWS Contents will be updated shortly</p> 
+</div>
+<div id="Terraform" class="tabcontent">
+  <h3>Terraform</h3>
+  <p>Terraform Contents will be updated shortly</p>
+<img src="img\terraform.png" alt="Nexus"></p>  
+</div>
+<div id="Ansible" class="tabcontent">
+  <h3><a href="https://devopsmates.com/ansible-playbook/" target="_blank">Ansible</a></h3>
+  <img src="img\ansible.png" alt="Nexus"></p>
+  <p>Ansible Contents will be updated shortly</p> 
+</div>
+<div id="Apache" class="tabcontent">
+  <h3><a href="https://www.tutorialride.com/apache-http-server/apache-http-server-tutorial.htm" target="_blank">Apache</a></h3>
+  <p>Apache HTTP Webserver is one of the most popular web servers</p>
+  <img src="img\apache.jpg" alt="Nexus"></p>
+  <p><a href="https://www.guru99.com/apache" target="_blank">Apache Contents will be updated shortly</a></p> 
+</div>
+<div id="Nexus" class="tabcontent">
+    <h3><a href="https://stackify.com/docker-tutorial/" target="_blank">Nexus</a></h3>
+  <p>It is a Repository Manager. It allows 	to store and retrieve build artifacts.
+   Nexus is avaialable as commercial and Open Source distribution.</p>
+   <img src="img\nexus.jpg" alt="Nexus"></p>
+   
+</div>
+
+<div id="Docker" class="tabcontent">
+  <h3><a href="https://stackify.com/docker-tutorial/" target="_blank">Docker</a></h3>
+  <img src="img\docker.png" alt="Nexus"></p>
+  <p>Docker is a platform for packaging, deploying, and running applications. Docker applications run in containers that can be used on any system: a developer’s laptop, systems on premises, or in the cloud.</p>
+
+<p>It packages applications as images that contain everything needed to run them: code, runtime environment, libraries, and configuration. Images run in containers, which are discrete processes that take up only as many resources as any other executable.</p>
+
+<p>It’s important to note that Docker containers don’t run in their own virtual machines, but share a Linux kernel. Compared to virtual machines, containers use less memory and less CPU.
+  </p>
+	<ol>
+		<li>Consistent test environment for development and QA.</li>
+		<li>Cross-platform packages called images.</li>
+		<li>Isolation and encapsulation of application dependencies.</li>
+		<li>Ability to scale efficiently, easily, and in real time.</li>
+		<li>Enhances efficiency via easy reuse of images.</li>
+	</ol>
+ <p><a href="https://medium.com/@nagarwal/lifecycle-of-docker-container-d2da9f85959" target="_blank">Life cycle of Docker Container </a>
+<img src="img\lifecycleDocker.png" alt="LifeCycle"></p>
+</div>
+
+<div id="Git" class="tabcontent">
+  <h3>Git</h3>
+  <img src="img\git.jpg" alt="Nexus"></p>
+  <p>Git will be updated soon.</p>
+  
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+</html>
