@@ -1,0 +1,3 @@
+Subha is root user
+Sesha is normal user 
+Arihant is root user
